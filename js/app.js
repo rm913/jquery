@@ -9,7 +9,8 @@ $(document).ready(function(){
 	$('.ryu').mouseenter(function() {
 
 		$('.ryu-still').hide();
-		$('ryu-ready').show();
+		$('.ryu-cool').hide();
+		$('.ryu-ready').show();
 })
 	.mouseleave(function() {
 
@@ -35,6 +36,25 @@ $(document).ready(function(){
 		$('.ryu-ready').show();
 		$('.ryu-throwing').hide();
 
-	});
+	})
+	
+	$(document).on('keydown', function(event) {
+
+  if ( event.which == 88 ) {
+   	$('.ryu-ready').hide();
+   	$('.ryu-still').hide();
+   	$('.ryu-throwing').hide();
+   	$('.ryu-cool').show();
+  }
+})
+	$(document).on('keyup', function(event) {
+
+  
+   	$('.ryu-ready').hide();
+   	$('.ryu-still').show();
+   	$('.ryu-throwing').hide();
+   	$('.ryu-cool').hide();
+  
+});
 });
 
