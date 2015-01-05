@@ -45,3 +45,17 @@ body{
 	display:none;
 
 }
+.instructions{
+	float: right;
+	font-family: sans-serif;
+	margin-right: 20em;
+	list-style-type:lower-alpha; 
+
+}
+.instructions h1{
+	margin-top: 5em;
+}
+.instructions>h2{
+	margin-top: 1em;
+	size: 2em;
+}
