@@ -16,7 +16,7 @@ body{
 	width: 659px;
 	height: 494px;
 }
-.ryu-ready, .ryu-throwing{
+.ryu-throwing{
 	display:none;
 }
 .ryu-still{
